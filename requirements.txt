@@ -1,0 +1,22 @@
+# Requirements for Resume Processing Lambda
+
+# Core AWS SDK
+boto3>=1.34.0
+
+# PDF processing
+PyPDF2>=3.0.1
+
+# OpenSearch client
+opensearch-py>=2.3.0
+
+# AWS authentication for OpenSearch
+aws-requests-auth>=0.4.3
+
+# JSON handling (built-in with Python)
+# urllib (built-in with Python)
+# datetime (built-in with Python)
+# uuid (built-in with Python)
+# logging (built-in with Python)
+
+# Note: When creating Lambda layer, install these using:
+# pip install PyPDF2 opensearch-py aws-requests-auth -t python/
