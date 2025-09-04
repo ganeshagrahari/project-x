@@ -13,15 +13,20 @@ logger.setLevel(logging.INFO)
 
 # Initialize AWS clients
 s3_client = boto3.client('s3')
-bedrock_runtime = boto3.client('bedrock-runtime', region_name='ap-south-1')
-opensearch_client = boto3.client('opensearch', region_name='ap-south-1')
+bedrock_runtime = boto3.client('bedrock-runtime', region_name='us-east-1')
+opensearch_client = boto3.client('opensearch', region_name='us-east-1')
 
 def lambda_handler(event, context):
     """
     Main Lambda handler function that processes job description files uploaded to S3
     """
+    print("=== LAMBDA FUNCTION STARTED ===")
+    print(f"Function name: {context.function_name}")
+    print(f"Request ID: {context.aws_request_id}")
+    
     try:
-        logger.info(f"Received event: {json.dumps(event)}")
+        print(f"Received event: {json.dumps(event, default=str)}")
+        logger.info(f"Received event: {json.dumps(event, default=str)}")
         
         # Process each S3 record in the event
         for record in event['Records']:
@@ -29,6 +34,7 @@ def lambda_handler(event, context):
             bucket_name = record['s3']['bucket']['name']
             object_key = unquote_plus(record['s3']['object']['key'])
             
+            print(f"Processing file: {object_key} from bucket: {bucket_name}")
             logger.info(f"Processing file: {object_key} from bucket: {bucket_name}")
             
             # Process job description - we assume all files in this bucket are job descriptions
@@ -42,10 +48,13 @@ def lambda_handler(event, context):
                 continue
             
             if result['success']:
+                print(f"✅ Successfully processed job description: {object_key}")
                 logger.info(f"Successfully processed job description: {object_key}")
             else:
+                print(f"❌ Failed to process job description: {object_key}. Error: {result['error']}")
                 logger.error(f"Failed to process job description: {object_key}. Error: {result['error']}")
         
+        print("=== LAMBDA FUNCTION COMPLETED SUCCESSFULLY ===")
         return {
             'statusCode': 200,
             'body': json.dumps({
@@ -55,6 +64,7 @@ def lambda_handler(event, context):
         }
         
     except Exception as e:
+        print(f"❌ ERROR in lambda_handler: {str(e)}")
         logger.error(f"Error in lambda_handler: {str(e)}")
         return {
             'statusCode': 500,
@@ -338,7 +348,7 @@ def store_in_opensearch(object_key, text, metadata, embeddings, document_type='j
             aws_access_key=credentials.access_key,
             aws_secret_access_key=credentials.secret_key,
             aws_token=credentials.token,
-            aws_region='ap-south-1',
+            aws_region='us-east-1',
             aws_service='es',
             aws_host=opensearch_endpoint
         )
