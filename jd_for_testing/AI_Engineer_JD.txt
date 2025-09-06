@@ -1,0 +1,41 @@
+Job Title: AI Engineer (Fresher)
+
+Location: [Your Company Location]
+Job Type: Full-time
+
+Job Description:
+We are looking for a passionate and motivated AI Engineer (Fresher) to join our dynamic team. As an AI Engineer, you will work on developing, implementing, and optimizing AI and machine learning models to solve real-world problems. This role is ideal for candidates who have strong programming skills, a solid foundation in AI/ML concepts, and hands-on experience with frameworks like PyTorch and LangChain.
+
+Key Responsibilities:
+- Design, develop, and deploy machine learning and deep learning models.
+- Work with frameworks such as PyTorch, TensorFlow, and LangChain for model building and deployment.
+- Implement and fine-tune NLP, computer vision, and other AI-based solutions.
+- Collaborate with data scientists, software engineers, and product teams to integrate AI solutions into applications.
+- Conduct research on new AI/ML techniques and apply them to business problems.
+- Optimize models for performance, scalability, and accuracy.
+
+Key Skills & Qualifications:
+- Strong knowledge of Python programming.
+- Hands-on experience with PyTorch (mandatory).
+- Familiarity with LangChain and LLMs (preferred).
+- Understanding of Natural Language Processing (NLP), deep learning, and machine learning fundamentals.
+- Knowledge of APIs, RAG (Retrieval-Augmented Generation), and integration with AI models.
+- Familiarity with data preprocessing, model training, and evaluation techniques.
+- Problem-solving skills and ability to work in a team environment.
+- Excellent communication and analytical skills.
+
+Education:
+- Bachelor’s degree in Computer Science, Data Science, Artificial Intelligence, or related field (or final-year student).
+
+Preferred (Not Mandatory):
+- Experience with Hugging Face models, Transformers, and other ML libraries.
+- Basic knowledge of cloud platforms (AWS, GCP, Azure).
+- Internship or academic project experience in AI/ML.
+
+Benefits:
+- Opportunity to work on cutting-edge AI/ML projects.
+- Mentorship from experienced AI professionals.
+- Growth and learning opportunities in a fast-paced environment.
+
+How to Apply:
+Send your resume and portfolio (if any) to [your email/contact details].

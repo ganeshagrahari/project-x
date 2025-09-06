@@ -1,0 +1,44 @@
+Job Title: Blockchain Developer
+
+Location: [Your Company Location]
+Job Type: Full-time
+
+Job Description:
+We are seeking a talented and motivated Blockchain Developer to join our team. As a Blockchain Developer, you will be responsible for designing, implementing, and supporting blockchain-based solutions. This role is ideal for candidates with a strong understanding of blockchain fundamentals, smart contracts, and decentralized applications (dApps).
+
+Key Responsibilities:
+- Design and develop blockchain-based applications and smart contracts.
+- Work with Ethereum, Hyperledger, or other blockchain frameworks.
+- Build and maintain decentralized applications (dApps).
+- Implement secure and scalable blockchain protocols.
+- Integrate blockchain solutions with existing systems and applications.
+- Conduct research on emerging blockchain technologies and propose innovative solutions.
+- Collaborate with cross-functional teams to deliver blockchain-powered products.
+- Optimize code and ensure high performance of blockchain systems.
+
+Key Skills & Qualifications:
+- Strong knowledge of blockchain fundamentals, cryptography, and consensus algorithms.
+- Proficiency in programming languages such as Solidity, JavaScript, Python, or Go.
+- Hands-on experience with smart contracts and Ethereum Virtual Machine (EVM).
+- Familiarity with frameworks like Truffle, Hardhat, or Remix.
+- Understanding of decentralized storage solutions (IPFS, Filecoin, etc.).
+- Experience with RESTful APIs and web3.js/ethers.js libraries.
+- Knowledge of databases (SQL/NoSQL) and distributed ledger technologies.
+- Strong problem-solving and analytical skills.
+
+Education:
+- Bachelor’s degree in Computer Science, Information Technology, or a related field (or final-year student).
+
+Preferred (Not Mandatory):
+- Experience with Hyperledger Fabric, Corda, or other enterprise blockchain platforms.
+- Familiarity with DeFi, NFTs, or tokenization concepts.
+- Knowledge of cloud platforms (AWS, GCP, Azure) for blockchain deployment.
+- Previous internship or project experience in blockchain development.
+
+Benefits:
+- Opportunity to work on cutting-edge blockchain projects.
+- Collaborative and innovative work environment.
+- Mentorship and career growth opportunities.
+
+How to Apply:
+Send your resume, GitHub/portfolio links, and project details to [your email/contact details].
